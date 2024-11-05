@@ -1,5 +1,5 @@
 import argparse
-from mathics import Mathics
+from mathics import mathics
 
 def evaluate_expression(expression):
     """Evaluate the provided mathematical expression using Mathics."""
