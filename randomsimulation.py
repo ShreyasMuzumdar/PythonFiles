@@ -7,8 +7,8 @@ num_trials = 20
 results = []
 
 for trial in range(num_trials):
-    # Generate an array of 10 random integers between 0 and 9
-    random_numbers = np.random.randint(0, 10, size=10)
+    # Generate a random permutation of numbers from 0 to 9
+    random_numbers = np.random.permutation(10)
     
     # Check how many numbers are in the correct form
     count_valid_numbers = sum(random_numbers[i] == i for i in range(10))
